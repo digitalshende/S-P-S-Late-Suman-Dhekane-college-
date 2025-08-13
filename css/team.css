@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1, header h2, header h3 {
+    margin: 5px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+
+    border-collapse: collapse;
+    width: 85%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #00509e;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+strong {
+    color: #003366;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding-left: 50%;
+        position: relative;
+    }
+    td:before {
+        position: absolute;
+        left: 15px;
+        top: 12px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    td:nth-of-type(1):before { content: "Sr. No."; }
+    td:nth-of-type(2):before { content: "Name / Details"; }
+    td:nth-of-type(3):before { content: "Photo"; }
+}
